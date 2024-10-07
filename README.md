@@ -1,6 +1,6 @@
 # Super Sly Designs - README
 ---
-[![Python Tests](https://github.com/sivak1rl/super-sly-design/actions/workflows/python-app.yml/badge.svg)](https://github.com/sivak1rl/super-sly-design/actions/workflows/python-app.yml)
+[![pytest](https://github.com/sivak1rl/super-sly-design/actions/workflows/python-app.yml/badge.svg)](https://github.com/sivak1rl/super-sly-design/actions/workflows/python-app.yml)
 
 Welcome to the **Super Sly Designs** project! This README will guide you through how to set up and run the project locally. Follow the steps below to get your environment ready.
 
