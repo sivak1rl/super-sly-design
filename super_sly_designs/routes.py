@@ -62,6 +62,22 @@ def view_post(post_id):
     post = BlogPost.query.get_or_404(post_id)
     return render_template('view_post.html', title=post.title, post=post)
 
+@app.route('/blog/<int:post_id>/edit', methods=['GET', 'POST'])
+@login_required
+def edit_post(post_id):
+    post = BlogPost.query.get_or_404(post_id)
+    if request.method == 'POST':
+        post.title = request.form.get('title')
+        post.content = request.form.get('content')
+        post.author = request.form.get('author')
+        if not post.title or not post.content or not post.author:
+            flash('All fields are required!', 'danger')
+        else:
+            db.session.commit()
+            flash('Post updated successfully!', 'success')
+            return redirect(url_for('view_post', post_id=post.id))
+    return render_template('edit_post.html', title='Edit Post', post=post)
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
