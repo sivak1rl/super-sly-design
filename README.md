@@ -18,7 +18,7 @@ To run this project, you need to have the following installed:
 First, clone this repository to your local machine. Use the command below:
 
 ```bash
-$ git clone https://github.com/your-username/super-sly-designs.git
+$ git clone https://github.com/sivak1rl/super-sly-designs.git
 $ cd super-sly-designs
 ```
 
@@ -44,7 +44,7 @@ $ pip install -r requirements.txt
 After completing the steps above, you can run the Flask server locally:
 
 ```bash
-$ flask run
+$ flask --app super_sly_designs/app.py run
 ```
 
 Alternatively, install the Python Extension Pack in Visual Studio Code and press F5.
