@@ -21,6 +21,12 @@ def login_required(f):
         return f(*args, **kwargs)
     return decorated_function
 
+@app.errorhandler(404)
+@app.route('/404')
+def page_not_found(error):
+  print(error)
+  return render_template('404.html', title='404 Not Found!')
+
 @app.route('/')
 def home():
     return render_template('home.html', title='Home')

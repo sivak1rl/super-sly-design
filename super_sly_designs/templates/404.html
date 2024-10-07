@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="text-center">
+    <i class="fas fa-map-signs lost-icon"></i>
+    <h1 class="display-4 fw-bold">404 - Page Not Found</h1>
+    <p class="lead">
+      Looks like you're as lost as my ex trying to figure out directions.<br />Don't worry, it happens to the best of us.
+    </p>
+    <p>
+      Maybe the page moved, maybe the URL was wrong, or maybe it's just having a bad day.<br />Either way, it's not here.
+    </p>
+    <a href="{{ url_for('home') }}" class="btn btn-home btn-lg"><i class="fas fa-home"></i> Take Me Home, Country Roads</a>
+  </div>
+{% endblock %}
