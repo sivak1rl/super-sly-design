@@ -10,7 +10,6 @@ To run this project, you need to have the following installed:
 - **pip**: Python's package manager.
 - **Virtualenv (optional)**: Recommended to create an isolated environment for running the project.
 - **Flask**: This project uses Flask as its web framework.
-- **Node.js and npm/yarn (optional)**: For frontend dependency management if needed.
 
 ## Installation Instructions
 
