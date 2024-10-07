@@ -1,0 +1,164 @@
+/* Modern, sleek, and eye-catching styles with red and blue highlights */
+
+/* Base styles */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Header styles */
+header {
+  background-color: #002b55;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+/* Navigation bar */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #004080;
+  padding: 10px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ff5252;
+}
+
+/* Main content */
+main {
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+main h2 {
+  color: #ff5252;
+  border-bottom: 2px solid #004080;
+  padding-bottom: 10px;
+  font-size: 2em;
+}
+
+/* Button styles */
+button {
+  background-color: #ff5252;
+  color: #ffffff;
+  border: none;
+  padding: 15px 25px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #e60000;
+}
+
+/* Footer styles */
+footer {
+  background-color: #002b55;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Cards for showcasing content */
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px 0;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card-title {
+  font-size: 1.8em;
+  color: #004080;
+}
+
+.card-description {
+  color: #666;
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+/* Highlight sections with blue and red accents */
+.highlight-blue {
+  background-color: #004080;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.highlight-red {
+  background-color: #ff5252;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Modern animation for icons or elements */
+.animated-icon {
+  font-size: 3em;
+  color: #004080;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.animated-icon:hover {
+  color: #ff5252;
+  transform: rotate(20deg);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 2em;
+  }
+
+  nav {
+      flex-direction: column;
+  }
+
+  main {
+      padding: 20px;
+  }
+} 
+
+blockquote {
+  border-left: 1px solid #ccc;
+  padding: 5px;
+}

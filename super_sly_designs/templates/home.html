@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="hero-section text-white text-center d-flex align-items-center justify-content-center" style="background-image: url('{{ url_for('static', filename='images/hero-bg.webp') }}'); height: 80vh; background-size: cover; background-position: center;">
+        <div class="hero-content">
+            <h1 class="display-4 fw-bold">Welcome to the CMS</h1>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque, optio veniam sapiente officiis possimus eveniet obcaecati quis necessitatibus molestiae non similique maiores sit totam! Inventore libero sint hic? Sunt!</p>
+            <a href="{{url_for('about')}}" class="btn btn-primary btn-lg mt-3">Learn More</a>
+        </div>
+    </div>
+
+    <section class="features-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="feature-box p-4">
+                        <i class="fas fa-bolt fa-3x text-primary mb-3"></i>
+                        <h3 class="h5">Fast & Reliable</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, officiis?</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="feature-box p-4">
+                        <i class="fas fa-shield-alt fa-3x text-danger mb-3"></i>
+                        <h3 class="h5">Secure Platform</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, officiis?</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="feature-box p-4">
+                        <i class="fas fa-chart-line fa-3x text-success mb-3"></i>
+                        <h3 class="h5">Scalable Solutions</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, officiis?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="testimonial-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="testimonial p-4">
+                        <blockquote class="blockquote">
+                            <p class="mb-4">"Super Sly Designs helped us create an amazing online presence. Their team is talented and truly understands modern design."</p>
+                            <footer class="blockquote-footer">John Doe, CEO of Awesome Co.</footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial p-4">
+                        <blockquote class="blockquote">
+                            <p class="mb-4">"The level of professionalism and the attention to detail at Super Sly Designs is unparalleled. We couldn't be happier."</p>
+                            <footer class="blockquote-footer">Jane Smith, Founder of Creative Labs</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
